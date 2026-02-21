@@ -1,0 +1,113 @@
+{
+  "identity": {
+    "name": "E1",
+    "persona": "Creative Designer (Anti-AI)",
+    "philosophy": "Fusion over Imitation. Emotion First. Content is King."
+  },
+  "theme": {
+    "mode": "light",
+    "style": "Tropical Heritage / Organic Modernism",
+    "emotional_tone": "Warm, Trustworthy, Vibrant, Cultural",
+    "background_strategy": "Warm Sand (#FDFBF7) with Woven Texture Overlays"
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Syne, sans-serif",
+      "weights": ["700", "800"],
+      "usage": "Main headings (H1, H2). Use tight tracking (-0.02em).",
+      "import_url": "https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["400", "500", "600"],
+      "usage": "Body text, UI elements, buttons.",
+      "import_url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#1B5E20",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#E65100",
+      "secondary_foreground": "#FFFFFF",
+      "accent": "#FFD600",
+      "accent_foreground": "#1A1A1A",
+      "background": "#FDFBF7",
+      "foreground": "#1A1A1A",
+      "muted": "#F5F5F0",
+      "muted_foreground": "#666666",
+      "border": "#E0E0D0",
+      "card": "#FFFFFF",
+      "card_foreground": "#1A1A1A"
+    },
+    "usage_rules": {
+      "gradients": "NO generic gradients. Use solid blocks of color or texture overlays.",
+      "text_contrast": "Ensure WCAG AA compliance. Use dark grey (#1A1A1A) for text, never pure black.",
+      "brand_accents": "Use Orange and Yellow sparingly for high-impact highlights (CTAs, decorative shapes)."
+    }
+  },
+  "visual_enhancers": {
+    "textures": [
+      {
+        "name": "Woven Straw",
+        "url": "https://images.unsplash.com/photo-1674880659624-90c97f5162a3?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "usage": "Low opacity (5-10%) overlay on 'Secondary' colored sections or cards."
+      }
+    ],
+    "border_radius": {
+      "cards": "rounded-xl",
+      "buttons": "rounded-full",
+      "images": "rounded-2xl"
+    },
+    "shadows": {
+      "card": "shadow-[4px_4px_0px_0px_rgba(27,94,32,0.1)]",
+      "hover": "shadow-[6px_6px_0px_0px_rgba(230,81,0,0.2)]"
+    }
+  },
+  "layout_strategies": {
+    "spacing": "Generous. Use p-8 to p-16 for section padding.",
+    "grid_system": "Bento Grid (Asymmetrical). Avoid equal-sized columns.",
+    "hero_section": "Full-width immersive image with bold, centered typography or Split layout with large image.",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+  },
+  "components": {
+    "buttons": {
+      "style": "Pill-shaped, high contrast.",
+      "classes": "rounded-full px-8 py-6 text-lg font-bold transition-all hover:-translate-y-1 hover:shadow-lg"
+    },
+    "cards": {
+      "style": "Neo-Brutalist Soft.",
+      "classes": "bg-white border border-border rounded-xl p-6 hover:border-primary/50 transition-colors"
+    },
+    "navigation": {
+      "style": "Floating Glass or Solid Sticky.",
+      "classes": "backdrop-blur-md bg-background/80 border-b border-border/50"
+    }
+  },
+  "image_urls": {
+    "hero_background": "https://images.unsplash.com/photo-1635991062422-b3e2f8c36dce?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "about_us": "https://images.unsplash.com/photo-1593460915132-fcb729cc4597?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "services_medical": "https://images.unsplash.com/photo-1652148658658-8486c742cc3e?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "community_projects": "https://images.unsplash.com/photo-1641554252302-4dbfc5d08781?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "texture_overlay": "https://images.unsplash.com/photo-1674880659624-90c97f5162a3?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "logo": "https://customer-assets.emergentagent.com/job_nonprofitcolombia/artifacts/qrwxuwsr_Logo%20FUNSOMEX.jpg"
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS: Add the Google Fonts imports to index.css immediately.",
+    "2. CONFIGURE TAILWIND: Update tailwind.config.js with the custom colors and font families defined above.",
+    "3. CREATE LAYOUT: Build a 'Layout' component that includes the Header and Footer.",
+    "4. USE SHADCN: Use Shadcn components for the Admin Panel, Forms, and complex interactive elements (Dialogs, Dropdowns).",
+    "5. CUSTOMIZE SHADCN: Override default Shadcn styles to match the 'Neo-Brutalist Soft' aesthetic (rounded-xl, custom shadows).",
+    "6. ANIMATIONS: Use 'framer-motion' for scroll reveals and hover effects. Do not leave the site static.",
+    "7. IMAGES: Use the provided image URLs. Do not use placeholders.",
+    "8. DATA-TESTID: Add data-testid attributes to all interactive elements.",
+    "9. FILE EXTENSIONS: Use .js and .jsx extensions as per the project structure."
+  ],
+  "universal_guidelines": [
+    "Avoid 'AI Slop' (generic centered layouts, default blue).",
+    "Use 2-3x more spacing than typical.",
+    "Ensure all text has sufficient contrast (APCA/WCAG AA).",
+    "Mobile-first responsive design is mandatory.",
+    "Use 'sonner' for toast notifications."
+  ]
+}
