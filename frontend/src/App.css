@@ -1,0 +1,177 @@
+/* FUNSOMEX Custom Styles */
+
+.hero-pattern {
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(27, 94, 32, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(230, 81, 0, 0.1) 0%, transparent 50%);
+}
+
+.section-divider {
+  height: 4px;
+  background: linear-gradient(90deg, #1B5E20 0%, #E65100 50%, #FFD600 100%);
+}
+
+/* Decorative shapes */
+.decorative-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.decorative-circle-primary {
+  background-color: #1B5E20;
+}
+
+.decorative-circle-secondary {
+  background-color: #E65100;
+}
+
+.decorative-circle-accent {
+  background-color: #FFD600;
+}
+
+/* Service card icons */
+.service-icon {
+  @apply w-16 h-16 rounded-2xl flex items-center justify-center text-white text-2xl;
+  background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 100%);
+}
+
+/* News card */
+.news-card {
+  @apply bg-white rounded-xl overflow-hidden border border-border transition-all duration-300;
+}
+
+.news-card:hover {
+  @apply -translate-y-1;
+  box-shadow: 6px 6px 0px 0px rgba(230, 81, 0, 0.15);
+}
+
+/* Team member card */
+.team-card {
+  @apply bg-white rounded-2xl overflow-hidden border border-border transition-all duration-300 text-center;
+}
+
+.team-card:hover {
+  @apply -translate-y-2;
+  box-shadow: 8px 8px 0px 0px rgba(27, 94, 32, 0.15);
+}
+
+/* Contact form */
+.contact-form {
+  @apply bg-white rounded-2xl p-8 border border-border;
+  box-shadow: 4px 4px 0px 0px rgba(27, 94, 32, 0.1);
+}
+
+/* Map placeholder */
+.map-container {
+  @apply rounded-2xl overflow-hidden border-4 border-primary/20;
+}
+
+/* Footer pattern */
+.footer-pattern {
+  background-color: #1B5E20;
+  background-image: 
+    radial-gradient(circle at 10% 90%, rgba(255, 214, 0, 0.1) 0%, transparent 30%),
+    radial-gradient(circle at 90% 10%, rgba(230, 81, 0, 0.1) 0%, transparent 30%);
+}
+
+/* Animated underline */
+.animated-underline {
+  position: relative;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #E65100;
+  transition: width 0.3s ease;
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+/* Badge styles */
+.badge-primary {
+  @apply bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.badge-secondary {
+  @apply bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.badge-accent {
+  @apply bg-accent/20 text-accent-foreground px-3 py-1 rounded-full text-sm font-medium;
+}
+
+/* Stat card */
+.stat-card {
+  @apply bg-white rounded-xl p-6 border border-border text-center;
+  box-shadow: 4px 4px 0px 0px rgba(27, 94, 32, 0.1);
+}
+
+/* Value card */
+.value-card {
+  @apply bg-white rounded-xl p-6 border-l-4 border-primary transition-all duration-300;
+}
+
+.value-card:hover {
+  @apply bg-primary/5;
+}
+
+/* Section headers */
+.section-header {
+  @apply text-center mb-12;
+}
+
+.section-header h2 {
+  @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4;
+}
+
+.section-header p {
+  @apply text-muted-foreground max-w-2xl mx-auto;
+}
+
+/* Loading skeleton */
+.skeleton {
+  @apply bg-muted animate-pulse rounded;
+}
+
+/* External news badge */
+.source-badge {
+  @apply inline-flex items-center px-2 py-1 rounded-full text-xs font-medium;
+}
+
+.source-badge-dian {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.source-badge-contraloria {
+  @apply bg-purple-100 text-purple-800;
+}
+
+.source-badge-portafolio {
+  @apply bg-orange-100 text-orange-800;
+}
+
+.source-badge-gobernacion {
+  @apply bg-green-100 text-green-800;
+}
+
+/* Admin panel styles */
+.admin-sidebar {
+  @apply bg-white border-r border-border h-screen;
+}
+
+.admin-nav-item {
+  @apply flex items-center gap-3 px-4 py-3 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors;
+}
+
+.admin-nav-item.active {
+  @apply bg-primary/10 text-primary;
+}

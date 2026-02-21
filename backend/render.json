@@ -1,0 +1,12 @@
+{
+  "name": "funsomex-api",
+  "version": "1.0.0",
+  "description": "FUNSOMEX API - Fundación Social y Financiera Mexion",
+  "main": "server.py",
+  "scripts": {
+    "start": "uvicorn server:app --host 0.0.0.0 --port ${PORT:-8001}"
+  },
+  "engines": {
+    "python": "3.11"
+  }
+}
